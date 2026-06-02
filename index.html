@@ -1,5 +1,41 @@
-<html>
+<html lang="en" data-theme="mocha">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/@catppuccin/daisyui@2/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/png" href="/waffle.png">
+    <title>CrunchiWaffl3s' Bio!</title>
+  </head>
   <body>
-    <h1>Coming Soon!</h1>
+    <div class="flex justify-end p-4">
+      <div class="dropdown dropdown-end dropdown-bottom">
+        <div tabindex="0" role="button" class="btn m-1">
+          <i data-lucide="palette"></i>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li><a onclick="switchCatppuccinTheme('latte')">🌻 Latte</a></li>
+          <li><a onclick="switchCatppuccinTheme('frappe')">🪴 Frappé</a></li>
+          <li><a onclick="switchCatppuccinTheme('macchiato')">🌺 Macchiato</a></li>
+          <li><a onclick="switchCatppuccinTheme('mocha')">🌿 Mocha</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center">
+      <h1 class="text-7xl text-primary text-center mb-4 font-['Poppins'] animate__animated animate__bounceInDown">CrunchiWaffl3s</h1>
+      <div class="flex gap-2 items-center justify-center">
+        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Gamer</div>
+        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Developer</div>
+        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Waffle-lover</div>
+      </div>
+    </div>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="index.js"></script>
   </body>
 </html>
