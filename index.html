@@ -17,7 +17,7 @@
         <div tabindex="0" role="button" class="btn m-1">
           <i data-lucide="palette"></i>
         </div>
-        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow font-['Poppins']">
           <li><a onclick="switchCatppuccinTheme('latte')">🌻 Latte</a></li>
           <li><a onclick="switchCatppuccinTheme('frappe')">🪴 Frappé</a></li>
           <li><a onclick="switchCatppuccinTheme('macchiato')">🌺 Macchiato</a></li>
@@ -25,13 +25,67 @@
         </ul>
       </div>
     </div>
-    <div class="text-center">
-      <h1 class="text-7xl text-primary text-center mb-4 font-['Poppins'] animate__animated animate__bounceInDown">CrunchiWaffl3s</h1>
+    <div class="text-center mb-20">
+      <h1 class="text-7xl font-semibold text-primary text-center mb-4 font-['Poppins'] animate__animated animate__bounceInDown">CrunchiWaffl3s</h1>
       <div class="flex gap-2 items-center justify-center">
         <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Gamer</div>
         <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Developer</div>
         <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Waffle-lover</div>
       </div>
+    </div>
+    <h2 class="text-3xl font-semibold text-primary text-center m-6 font-['Poppins']">Projects</h2>
+    <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-3 max-w-2xl mx-auto px-4">
+      <div class="card bg-base-200 font-['Poppins'] rounded-4xl mx-auto w-full max-w-xs">
+        <figure class="px-10 pt-10 w-1/2 h-1/2 self-center">
+          <img src="waffle.png">
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Games & Stuff</h2>
+          <p>A simple and clean game website frontend that I kind of abandoned</p>
+        </div>
+      </div>
+      <div class="card bg-base-200 font-['Poppins'] rounded-4xl mx-auto w-full max-w-xs">
+        <figure class="px-10 pt-10 w-1/2 h-1/2 self-center">
+          <img src="waffle.png">
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Gamemaker Game</h2>
+          <p>Current project with a friend that will hopefully make it to Steam</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-3xl font-semibold text-primary text-center m-6 font-['Poppins']">Games I Play</h2>
+    <div class="max-w-md mx-auto px-4 w-full">
+      <div class="mockup-window rounded-2xl bg-base-200">
+        <div class="p-6 font-['JetBrains_Mono'] text-sm">
+          <div class="flex items-center gap-2 mb-4 text-secondary">
+            <i data-lucide="gamepad-2" class="w-4 h-4"></i>
+            <span>~/games</span>
+          </div>
+          <ul class="space-y-2">
+            <li class="flex justify-between items-center p-3 rounded-xl bg-base-100">
+              <span class="font-medium">🔥 Geometry Dash</span>
+              <div class="flex gap-1">
+                <span class="badge badge-sm badge-soft rounded-full">PC</span>
+                <span class="badge badge-sm badge-soft rounded-full">Mobile</span>
+              </div>
+            </li>
+            <li class="flex justify-between items-center p-3 rounded-xl bg-base-100">
+              <span class="font-medium">🍄‍🟫 Minecraft</span>
+              <div class="flex gap-1">
+                <span class="badge badge-sm badge-soft rounded-full">PC</span>
+                <span class="badge badge-sm badge-soft rounded-full">Mobile</span>
+              </div>
+            </li>
+            <li class="flex justify-between items-center p-3 rounded-xl bg-base-100">
+              <span class="font-medium">💀 Brawl Stars</span>
+              <span class="badge badge-sm badge-soft rounded-full">Mobile</span>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+
     </div>
     <script>
       lucide.createIcons();
