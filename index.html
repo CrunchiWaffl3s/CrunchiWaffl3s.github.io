@@ -3,21 +3,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/@catppuccin/daisyui@2/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@catppuccin/daisyui@2/themes.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="icon" type="image/png" href="/waffle.png">
     <title>CrunchiWaffl3s' Bio!</title>
   </head>
   <body>
     <div class="flex justify-end p-4">
       <div class="dropdown dropdown-end dropdown-bottom">
-        <div tabindex="0" role="button" class="btn m-1">
+        <div tabindex="0" role="button" class="btn m-1 rounded-xl border-none bg-base-200">
           <i data-lucide="palette"></i>
         </div>
-        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow font-['Poppins']">
+        <ul tabindex="0" class="dropdown-content menu bg-base-200 rounded-xl w-52 p-2 font-['Poppins']">
           <li><a onclick="switchCatppuccinTheme('latte')">🌻 Latte</a></li>
           <li><a onclick="switchCatppuccinTheme('frappe')">🪴 Frappé</a></li>
           <li><a onclick="switchCatppuccinTheme('macchiato')">🌺 Macchiato</a></li>
@@ -28,14 +30,14 @@
     <div class="text-center mb-20">
       <h1 class="text-7xl font-semibold text-primary text-center mb-4 font-['Poppins'] animate__animated animate__bounceInDown">CrunchiWaffl3s</h1>
       <div class="flex gap-2 items-center justify-center">
-        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Gamer</div>
-        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Developer</div>
-        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft animate__delay-1s">Waffle-lover</div>
+        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft" style="animation-delay: 1s;">Gamer</div>
+        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft" style="animation-delay: 1.5s;">Developer</div>
+        <div class="badge badge-info rounded-full font-['JetBrains_Mono'] animate__animated animate__backInLeft" style="animation-delay: 2s;">Waffle-lover</div>
       </div>
     </div>
-    <h2 class="text-3xl font-semibold text-primary text-center m-6 font-['Poppins']">Projects</h2>
+    <h2 data-aos="fade-in" class="mt-20 text-3xl font-semibold text-primary text-center m-6 font-['Poppins']">Projects</h2>
     <div class="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-3 max-w-2xl mx-auto px-4">
-      <div class="card bg-base-200 font-['Poppins'] rounded-4xl mx-auto w-full max-w-xs">
+      <div data-aos="fade-right" class="card bg-base-200 font-['Poppins'] rounded-4xl mx-auto w-full max-w-xs">
         <figure class="px-10 pt-10 w-1/2 h-1/2 self-center">
           <img src="waffle.png">
         </figure>
@@ -44,7 +46,7 @@
           <p>A simple and clean game website frontend that I kind of abandoned</p>
         </div>
       </div>
-      <div class="card bg-base-200 font-['Poppins'] rounded-4xl mx-auto w-full max-w-xs">
+      <div data-aos="fade-left" class="card bg-base-200 font-['Poppins'] rounded-4xl mx-auto w-full max-w-xs">
         <figure class="px-10 pt-10 w-1/2 h-1/2 self-center">
           <img src="waffle.png">
         </figure>
@@ -54,8 +56,8 @@
         </div>
       </div>
     </div>
-    <h2 class="text-3xl font-semibold text-primary text-center m-6 font-['Poppins']">Games I Play</h2>
-    <div class="max-w-md mx-auto px-4 w-full">
+    <h2 data-aos="fade-in" class="mt-20 text-3xl font-semibold text-primary text-center m-6 font-['Poppins']">Games I Play</h2>
+    <div data-aos="fade-up" class="max-w-md mx-auto px-4 w-full mb-100">
       <div class="mockup-window rounded-2xl bg-base-200">
         <div class="p-6 font-['JetBrains_Mono'] text-sm">
           <div class="flex items-center gap-2 mb-4 text-secondary">
@@ -89,6 +91,7 @@
     </div>
     <script>
       lucide.createIcons();
+      AOS.init();
     </script>
     <script src="index.js"></script>
   </body>
